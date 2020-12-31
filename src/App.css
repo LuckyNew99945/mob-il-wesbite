@@ -1,38 +1,133 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #261f24;
+  color: #e5e5e5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+h1 {
+  font-size: 100px;
+  position: absolute;
+  margin-top: 200px;
+  padding: 0 35px;
+  font-weight: lighter;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  margin-right: 75px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+li:hover {
+  padding-bottom: 85px;
+  border-bottom: 5px solid #dd885f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.first-nav {
+  margin-right: 500px;
+}
+
+.cars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specs {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 25px;
+  min-height: 70vh;
+  width: 10%;
+}
+
+.specs p {
+  font-size: 16px;
+  color: #b95e32;
+}
+
+.specs h2 {
+  margin-top: 10px;
+  font-size: 48px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.display-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 35rem;
+}
+
+.display-car h1 {
+  position: absolute;
+  z-index: 1;
+  right: 400px;
+  -webkit-text-stroke: 1px #dd885f;
+  font-size: 250px;
+  color: #261f24;
+  text-transform: uppercase;
+}
+
+/* .display-car p::after {
+  content: 'MARK-1';
+  position: absolute;
+  z-index: 1;
+  right: 400px;
+  -webkit-text-stroke: 1px #dd885f;
+  font-size: 250px;
+  color: #261f24;
+} */
+
+.display-car img {
+  margin-top: 125px;
+  width: 750px;
+  background: none;
+  z-index: 2;
+}
+
+.choose-cars {
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  background: none;
+  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.choose-cars img {
+  width: 200px;
+  background: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.choose-cars img:hover {
+  border-radius: 50%;
+  background: #67aac8;
+  cursor: pointer;
 }
